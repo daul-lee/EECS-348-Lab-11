@@ -1,4 +1,2 @@
-FROM gcc:latest
-COPY . . 
-RUN gcc temperature.c temperature_main.c
-CMD ./a.out
+FROM php:8.3-apache
+COPY . /var/www/html
